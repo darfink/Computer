@@ -4,7 +4,7 @@ import computer.Memory;
 import computer.ProgramCounter;
 import computer.Value;
 
-public class Print extends Instruction  {
+public class Print extends Instruction {
   private Value value;
 
   public Print(Value value) {
@@ -12,18 +12,18 @@ public class Print extends Instruction  {
   }
 
   @Override
-	public void execute(ProgramCounter counter, Memory memory) {
+  public void execute(ProgramCounter counter, Memory memory) {
     System.out.println(value.getWord(memory));
     counter.increment();
   }
 
   @Override
-	protected String opcode() {
+  protected String opcode() {
     return "PRT";
   }
 
   @Override
   protected Value[] operands() {
-    return new Value[] { value };
+    return new Value[] {value};
   }
 }

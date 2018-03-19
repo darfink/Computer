@@ -3,7 +3,7 @@ package computer.instruction;
 import computer.Memory;
 import computer.ProgramCounter;
 
-public class Jump extends Instruction  {
+public class Jump extends Instruction {
   private int jumpTo;
 
   public Jump(int jumpTo) {
@@ -11,17 +11,17 @@ public class Jump extends Instruction  {
   }
 
   @Override
-	public void execute(ProgramCounter counter, Memory memory) {
+  public void execute(ProgramCounter counter, Memory memory) {
     counter.setRegister(jumpTo);
   }
 
   @Override
-	protected String opcode() {
+  protected String opcode() {
     return "JMP";
   }
 
   @Override
   protected Number[] operands() {
-    return new Number[] { jumpTo };
+    return new Number[] {jumpTo};
   }
 }

@@ -11,7 +11,7 @@ public class Halt extends Instruction {
   }
 
   @Override
-	protected String opcode() {
+  protected String opcode() {
     return "HLT";
   }
 

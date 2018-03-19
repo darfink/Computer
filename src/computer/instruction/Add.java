@@ -26,12 +26,12 @@ public class Add extends Instruction {
   }
 
   @Override
-	protected String opcode() {
+  protected String opcode() {
     return "ADD";
   }
 
   @Override
-	protected Value[] operands() {
-    return new Value[] { value1, value2, destination };
+  protected Value[] operands() {
+    return new Value[] {value1, value2, destination};
   }
 }

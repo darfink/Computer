@@ -25,14 +25,13 @@ public class Mul extends Instruction {
     counter.increment();
   }
 
-
   @Override
-	protected String opcode() {
+  protected String opcode() {
     return "MUL";
   }
 
   @Override
   protected Value[] operands() {
-    return new Value[] { value1, value2, destination };
+    return new Value[] {value1, value2, destination};
   }
 }

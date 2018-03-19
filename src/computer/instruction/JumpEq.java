@@ -16,7 +16,7 @@ public class JumpEq extends Instruction {
   }
 
   @Override
-	public void execute(ProgramCounter counter, Memory memory) {
+  public void execute(ProgramCounter counter, Memory memory) {
     if (value1.getWord(memory).equals(value2.getWord(memory))) {
       counter.setRegister(jumpTo);
     } else {
@@ -25,12 +25,12 @@ public class JumpEq extends Instruction {
   }
 
   @Override
-	protected String opcode() {
+  protected String opcode() {
     return "JEQ";
   }
 
   @Override
   protected Object[] operands() {
-    return new Object[] { jumpTo, value1, value2 };
+    return new Object[] {jumpTo, value1, value2};
   }
 }

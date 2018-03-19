@@ -13,7 +13,7 @@ public class Computer {
   }
 
   public void run() {
-    for (ProgramCounter pc = new ProgramCounter(); pc.isValid();) {
+    for (ProgramCounter pc = new ProgramCounter(); pc.isValid(); ) {
       program.get(pc.getRegister()).execute(pc, memory);
     }
   }

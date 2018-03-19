@@ -1,7 +1,7 @@
 package computer;
 
-import java.util.ArrayList;
 import computer.instruction.Instruction;
+import java.util.ArrayList;
 
 @SuppressWarnings("serial")
 public abstract class Program extends ArrayList<Instruction> {

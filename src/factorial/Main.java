@@ -1,7 +1,7 @@
 package factorial;
 
-import computer.Program;
 import computer.Computer;
+import computer.Program;
 import computer.memory.LongMemory;
 
 public class Main {
